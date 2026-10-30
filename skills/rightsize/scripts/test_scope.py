@@ -363,7 +363,7 @@ def run_and_record(root: Path, plan: Plan, command: list[str], test_count: int) 
         "command": " ".join(command),
     }
     ledger = load_ledger(root)
-    runs = (ledger.get("runs") or [])[-19:] + [entry]
+    runs = [*(ledger.get("runs") or [])[-19:], entry]
     last_full = entry if plan.mode == "full" else ledger.get("last_full")
     save_ledger(root, {**ledger, "last_full": last_full, "runs": runs})
     tail = (done.stdout + done.stderr).strip().splitlines()[-15:]
