@@ -5,3 +5,4 @@ __pycache__/
 .ruff_cache/
 bench/results.jsonl
 .claude/rightsize/
+.github/tools/claude-code/node_modules/

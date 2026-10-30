@@ -106,13 +106,15 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Install Claude Code (pinned)
-        run: npm install --global @anthropic-ai/claude-code@2.1.314
+      # From the lockfile: every package is checked against its integrity hash before
+      # its install script (which fetches the native binary) can run.
+      - name: Install Claude Code from the lockfile
+        run: npm ci --prefix .github/tools/claude-code --no-audit --no-fund
 
       - name: Validate plugin and marketplace manifests
         env:
           CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
-        run: claude plugin validate .
+        run: .github/tools/claude-code/node_modules/.bin/claude plugin validate .
 
   secrets:
     name: Secret scan (full history)

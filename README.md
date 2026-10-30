@@ -79,6 +79,7 @@ Everything is reproducible with [`bench/`](docs/measuring.md).
 - [Measuring](docs/measuring.md): your own usage, and the benchmark
 - [Architecture](docs/architecture.md): layout and design decisions
 - [FAQ](docs/faq.md)
+- [Maintainer notes](docs/maintainers.md): repository security settings, going public, releasing
 
 ## Why not a prompt classifier in a hook
 

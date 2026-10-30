@@ -1,0 +1,8 @@
+{
+  "name": "rightsize-ci-claude-code",
+  "private": true,
+  "description": "Pins the Claude Code CLI used by CI to validate the plugin. Installed with npm ci from the lockfile.",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "2.1.314"
+  }
+}
