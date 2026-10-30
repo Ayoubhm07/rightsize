@@ -37,7 +37,8 @@ ignore = [
 "skills/rightsize/scripts/test_scope.py" = ["S311"]
 
 [tool.mypy]
-python_version = "3.9"
+# mypy 2.x analyses for 3.10+; Python 3.9 support is enforced by the CI test matrix.
+python_version = "3.10"
 files = ["skills/rightsize/scripts", "hooks", "bench/run_bench.py", "bench/summarize.py"]
 strict = true
 warn_unreachable = true
