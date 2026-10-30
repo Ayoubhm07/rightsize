@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.bak
+.mypy_cache/
+.ruff_cache/
+bench/results.jsonl
+.claude/rightsize/

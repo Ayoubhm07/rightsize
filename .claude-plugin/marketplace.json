@@ -1,0 +1,17 @@
+{
+  "name": "rightsize",
+  "description": "rightsize: elite quality first, measured model and effort routing for Claude Code.",
+  "owner": {
+    "name": "Ayoub",
+    "url": "https://github.com/Ayoubhm07"
+  },
+  "plugins": [
+    {
+      "name": "rightsize",
+      "source": "./",
+      "description": "Expert playbooks, measured model and effort routing, scoped verification and an agent-to-agent protocol for Claude Code.",
+      "version": "0.1.0",
+      "license": "MIT"
+    }
+  ]
+}

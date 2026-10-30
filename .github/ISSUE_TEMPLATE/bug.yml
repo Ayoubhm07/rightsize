@@ -1,0 +1,24 @@
+name: Bug report
+description: Something in rightsize does not behave as documented.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Commands, prompts or a minimal repository. Remove secrets and private code.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "Claude Code 2.1.314, Python 3.12, rightsize 0.1.0, OS"
+    validations:
+      required: true
