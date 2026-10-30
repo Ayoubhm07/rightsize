@@ -1,0 +1,15 @@
+name: Idea or improvement
+description: A change to the routing, playbooks, tools or docs.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Which problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Measurements, transcripts or documentation that support it. Routing changes need numbers.
