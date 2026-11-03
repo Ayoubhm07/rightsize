@@ -52,14 +52,16 @@ compiler will prove the result.
 
 | Situation | Model | Effort |
 |---|---|---|
-| T0 | no model: run the tool | — |
+| T0, R ≤ 2 | no model: run the tool | — |
+| R = 3, whatever the other axes, T0, READ or BULK | opus | high |
+| R = 3 and D = 3 | opus | xhigh |
 | READ, or BULK with an exact spec and a check, R ≤ 1 | haiku | low |
 | peak ≤ 1 | haiku, or sonnet if others build on the result | low |
 | peak = 2 | sonnet | medium |
 | peak = 3 only through the risk bonus | opus | medium |
 | peak = 3 because C or A = 3 | opus plans (high), sonnet executes (medium) | |
-| peak = 3 because D = 3, or R = 3 | opus | high |
-| D = 3 and R ≥ 2, or long autonomous run | opus | xhigh |
+| peak = 3 because D = 3 | opus | high |
+| D = 3 and R = 2, or D = 3 and long autonomous run | opus | xhigh |
 | opus xhigh failed on it | fable, or opus max | xhigh / max |
 
 **Effort, measured.** 100 headless runs in October 2026: 4 tasks with hidden tests or
