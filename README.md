@@ -1,10 +1,20 @@
-# rightsize
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cover-dark.svg">
+  <img src="docs/assets/cover-light.svg" alt="rightsize: across effort levels the pass rate stays at 100% while cost climbs to 7.7 times high on Opus 5.5" width="100%">
+</picture>
 
-**Elite quality first. Then every token spent where it changes the outcome.**
+<p align="center">
+  <a href="https://github.com/Ayoubhm07/rightsize/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Ayoubhm07/rightsize/actions/workflows/ci.yml/badge.svg"></a>
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <img alt="Runtime dependencies: none" src="https://img.shields.io/badge/runtime%20dependencies-none-brightgreen.svg">
+</p>
 
-[![CI](https://github.com/Ayoubhm07/rightsize/actions/workflows/ci.yml/badge.svg)](https://github.com/Ayoubhm07/rightsize/actions/workflows/ci.yml)
-![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![Dependencies: none](https://img.shields.io/badge/runtime%20dependencies-none-brightgreen.svg)
+<p align="center">
+  <a href="docs/getting-started.md"><b>Get started</b></a> ·
+  <a href="#measured-not-claimed"><b>Measurements</b></a> ·
+  <a href="docs/usage-guide.md"><b>Usage guide</b></a> ·
+  <a href="docs/faq.md"><b>FAQ</b></a>
+</p>
 
 A Claude Code plugin that gives every session an expert work strategy: the right
 playbook for the job, the right model (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1),
@@ -15,6 +25,13 @@ never on habit.
 ```text
 /plugin install rightsize --marketplace Ayoubhm07/rightsize
 ```
+
+## How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/how-it-works-dark.svg">
+  <img src="docs/assets/how-it-works-light.svg" alt="Score the task, route it to a model, effort and mode, verify with the tests the change reaches, and escalate one rung on evidence" width="100%">
+</picture>
 
 ## Rule 0: quality before optimisation
 
@@ -30,6 +47,11 @@ rightsize takes the stronger one.
 cell, on four tasks graded by hidden tests or an oracle, up to a regex engine
 compared with Python's `re` on 3 000 random patterns.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/effort-cost-dark.svg">
+  <img src="docs/assets/effort-cost-light.svg" alt="Mean cost relative to high effort: Sonnet 5.5 0.5, 0.6, 1, 1.7 and 7 times; Opus 5.5 0.8, 1, 1, 2.1 and 7.7 times, from low to max; every run passed" width="100%">
+</picture>
+
 - **Every valid run passed from `low` up**, on Haiku, Sonnet and Opus 5.5. Haiku at
   `low` built a regex engine matching `re` on all 3 000 cases, 3 times out of 3, for $0.02.
 - Above `medium`, effort bought nothing measurable on these tasks:
@@ -44,6 +66,11 @@ verified task starts one effort level lower and climbs on failure. Work no check
 grade (design, review, open-ended tasks) keeps a high effort.
 
 **Routing benchmark: 19 runs.** Against Opus at `high` for everything:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/routing-savings-dark.svg">
+  <img src="docs/assets/routing-savings-light.svg" alt="Routed runs against Opus at high: minus 98, 96 and 73 percent, with 2 of 2 passes on both sides" width="100%">
+</picture>
 
 | Task | Baseline | rightsize | Cost | Pass |
 |---|---|---|---|---|
