@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **rightsize now lives at [phantera-ai/rightsize](https://github.com/phantera-ai/rightsize)**, as a gift from Phantera to its community.
+> Install with `/plugin install rightsize --marketplace phantera-ai/rightsize` and star it there.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cover-dark.svg">
   <img src="docs/assets/cover-light.svg" alt="rightsize: across effort levels the pass rate stays at 100% while cost climbs to 7.7 times high on Opus 5.5" width="100%">
